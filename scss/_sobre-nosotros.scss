@@ -1,0 +1,71 @@
+/* SOBRE NOSOTROS */
+
+main h2 {
+    font-size: $tam-titulos;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+    color: $color-principal;
+}
+
+#sobre-nosotros img {
+    height: 400px;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+#sobre-nosotros p {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 60px;
+    text-align: center;
+}
+
+
+.sobre-nosotros1,
+.sobre-nosotros2,
+.sobre-nosotros3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sobre-nosotros2 {
+    margin-right: 50px;
+}
+
+
+/* NUESTROS VALORES */
+
+.titulo-valores {
+    font-size: $tam-titulos;
+    font-weight: 600;
+    text-align: center;
+    margin: 60px;
+    color: $color-principal;
+}
+
+#nuestros-valores {
+    height: 16em;
+    margin: 60px;
+    display: flex;
+    justify-content: row;
+    justify-content: space-evenly;
+}
+
+#nuestros-valores .card img {
+    width: 50px;
+    margin: auto;
+}
+
+
+#nuestros-valores .card h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#nuestros-valores .card p {
+    text-align: center;
+    font-weight: bolder;
+}

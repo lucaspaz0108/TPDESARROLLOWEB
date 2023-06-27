@@ -1,0 +1,129 @@
+/* SEPARADOR */
+
+#separador {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+
+#separador h2 {
+    font-size: $tam-titulos;
+    font-weight: 600;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(to right, #0062ff, #ff0062);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#separador p {
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    color: black
+}
+
+
+/* IMAGENES INF. */
+
+#imagenes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#imagenes article {
+    width: 339px;
+    height: 450px;
+    color: black;
+}
+
+#imagenes img {
+    width: 339px;
+    height: 290px;
+    transition: 0, 5s;
+    object-fit: cover;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+#imagenes h3 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 24px 32px 16px 32px;
+    justify-content: center;
+    color: $color-principal;
+}
+
+#imagenes p {
+    font-weight: 400;
+    font-size: 17px;
+    margin: 16px 32px 0px 32px;
+    justify-content: center;
+}
+
+#imagenes {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+
+/* TESTIMONIOS CLIENTES */
+
+.p-card {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin: 50px;
+}
+
+#testimonios h2 {
+    font-size: $tam-titulos;
+    font-weight: 600;
+    color: $color-principal;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+#cards-clientes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+.card {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.548)
+}
+
+
+.card p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.card-contenido img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.card-contenido {
+    display: flex;
+    justify-items: space-evenly;
+    gap: 1em;
+}
+
+.titulo-card {
+    font-size: 20px;
+    margin-top: 10px;
+}

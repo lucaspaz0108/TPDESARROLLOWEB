@@ -1,0 +1,113 @@
+/* NAVBAR */
+
+header {
+    width: 100%;
+    height: 600px;
+    background-image: url(../imagenes/hero.jpg);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../imagenes/fondotres.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../imagenes/fondotres.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contenedor_header {
+    margin: auto;
+    margin-bottom: 17px;
+    padding: 17px;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.bar-btn {
+    font-size: 25px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 15px;
+    margin: 40px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.nav-menu li a.active,
+.nav-menu li a:hover {
+    color: $color-principal;
+    transition: .3s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 60vh;
+    width: 75vh;
+}
+
+#check:checked ~ .nav-menu li{
+    display: block;  
+} 
+
+.titulos-header {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulos-header h1 {
+    font-size: $tam-titulos;
+    font-weight: 500px;
+    color: white
+}
+
+.titulos-header h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: white
+}
+

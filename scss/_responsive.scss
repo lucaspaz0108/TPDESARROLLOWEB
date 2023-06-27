@@ -1,0 +1,240 @@
+/* MENU RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+   
+    .logo{
+        margin-left: 50px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a{
+        font-size: 18px;  
+    }
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:900px) {
+
+    .menu nav ul li {
+        margin: 0px ;
+        padding: 0px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    header {
+        background-position: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .titulos-header h1 {
+        font-size: 30px;
+    }
+
+    .titulos-header h2 {
+        font-size: 20px;
+    }
+
+    .menu nav ul li a {
+        font-size: 13px;
+    }
+
+    .btn-registro {
+        padding: 8px 10px;
+        font-size: 12px;
+
+    }
+
+
+
+    /* IMAGENES INF. */
+
+    #imagenes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imagenes {
+        width: 90%;
+    }
+
+    #imagenes article {
+        margin: 50px;
+    }
+
+    /* TESTIMONIOS CLIENTES */
+
+    #cards-clientes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cards-clientes .card {
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    /* CURSOS  */
+
+    .cards-cursos,
+    .cards-cursos-dos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .cards-cursos .card,
+    .cards-cursos-dos .card {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+    #cursos {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #cursos img {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+
+    /* SOBRE NOSOTROS */
+
+    .sobre-nosotros1,
+    .sobre-nosotros3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre-nosotros1 img,
+    .sobre-nosotros3 img {
+        margin: auto;
+        height: 400px;
+        width: 400px;
+    }
+
+    .sobre-nosotros2 {
+        display: none;
+    }
+
+    .sobre-nosotros2 img {
+        display: none;
+
+    }
+
+    #sobre-nosotros img {
+        height: 90%;
+        width: 90%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+    /* NUESTROS VALORES */
+
+    .titulo-valores {
+        margin-bottom: 100px;
+    }
+
+    #nuestros-valores {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #nuestros-valores .card {
+        width: 90%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #nuestros-valores .card :first-child {
+        display: none;
+    }
+
+
+
+    /* PREGUNTAS FRECUENTES */
+
+    .accordion {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin: auto;
+    }
+
+
+    /* CONTACTO */
+
+    #contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contacto img {
+        width: 450px;
+        margin: auto;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin: auto;
+    }
+
+
+    img:hover{
+        transform: none;
+    }
+
+    .card:hover {
+        transform: none
+    }
+}

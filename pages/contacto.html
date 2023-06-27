@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos IT-Contacto</title>
+    <meta name="description"
+        content="Contactate con nosotros a traves de nuestro formulario de contacto o redes para inscribirte a nuestros cursos.">
+    <!-- BOOTSTRAP -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--FONT AWESOME  -->
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js"></script>
+    <!-- FAVICON -->
+    <link rel="icon" href="../imagenes/laptop.svg">
+    <!-- LINK CSS PROPIO-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header data-aos="zoom-in">
+        <!-- NAVBAR -->
+        <div class="contenedor_header">
+            <nav>
+                <!-- LOGO -->
+                <div>
+                    <a href="../index.html">
+                        <img class="logo" src="../imagenes/logodos.png" alt="Logo">
+                    </a>
+                </div>
+                <input type="checkbox" id="check">
+                <label for="check" class="bar-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="nav-menu">
+                    <li><a class="active" href="../index.html">Inicio</a></li>
+                    <li><a href="nuestroscursos.html">Nuestros cursos</a></li>
+                    <li><a href="preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+                    <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="titulos-header">
+            <h1>Llevá tu carrera al siguiente nivel</h1>
+            <h2>Sumate a Cursos IT</h2>
+            <div class="header-registro">
+                <input type="button" class="btn-registro" value="Aplica ya">
+            </div>
+            <!-- WAVE -->
+            <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                    preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #fff;"></path>
+                </svg></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="contacto">
+            <div class="titulos-contacto">
+                <h2>Contacto</h2>
+                <h3>Contactate con nosotros o llena nuestro formulario.</h3>
+            </div>
+            <img src="../imagenes/contacto.svg" alt="dibujo contacto">
+        </section>
+    </main>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section id="formulario-contacto">
+        <h2>Formulario de contacto</h2>
+        <h3>¡Llena el formulario con tus datos para anotarte en los cursos y nos vamos a estar comunicando con
+            vos!</h3>
+        <form class="formulario">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Telefono</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Curso al que queres inscribirte</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Contanos sobre vos</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button class="btn-formulario">Enviar</button>
+            <button class="btn-formulario">Borrar</button>
+        </form>
+    </section>
+
+
+    <!-- FOOTER -->
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Secciones</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-muted">Inicio</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="nuestroscursos.html" class="nav-link p-0 text-muted">Nuestros
+                                cursos</a></li>
+                        <li class="nav-item mb-2"><a href="sobrenosotros.html" class="nav-link p-0 text-muted">Sobre
+                                nosotros</a></li>
+                        <li class="nav-item mb-2"><a href="preguntasfrecuentes.html"
+                                class="nav-link p-0 text-muted">Preguntas frecuentes</a></li>
+                        <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 text-muted">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>SUSCRIBITE AL NEWSLETTER</h5>
+                        <p>Te llegaran nuestros nuevos cursos y ofertas.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Direccion de email">
+                            <button class="btn-footer" type="button">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2023 Cursos IT. Todos los derechos reservados.</p>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/" target="_blank"><svg
+                                class="bi" width="24" height="24">
+                                <use xlink:href="#instagram" />
+                            </svg> <img class="logoInstagram" src="../imagenes/logoinstagram.png"
+                                alt="logo instagram"></a>
+                    </li>
+                    <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/" target="_blank"><svg
+                                class="bi" width="24" height="24">
+                                <use xlink:href="#facebook" />
+                            </svg> <img class="logoFacebook" src="../imagenes/logofacebook.jpg" alt="logo facebook"></a>
+                    </li>
+                    <li class="ms-3"><a class="text-muted" href="https://www.twitter.com/" target="_blank"><svg
+                                class="bi" width="24" height="24">
+                                <use xlink:href="#twitter" />
+                            </svg> <img class="logoTwitter" src="../imagenes/logotwitter.png" alt="logo twitter"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- <AOS!--  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

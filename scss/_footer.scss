@@ -1,0 +1,28 @@
+
+/* FOOTER */
+
+.logoInstagram {
+    width: 30px;
+}
+
+.logoFacebook {
+    width: 30px;
+}
+
+.logoTwitter {
+    width: 30px;
+}
+
+div ul li a {
+    text-decoration: none;
+
+}
+
+.container ul li a {
+    transition: opacity 300ms;
+}
+
+
+.container ul li a:hover {
+    opacity: 0.6;
+}

@@ -1,0 +1,620 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Urbanist', sans-serif; }
+
+/* NAVBAR */
+header {
+  width: 100%;
+  height: 600px;
+  background-image: url(../imagenes/hero.jpg);
+  /* gradiente para navegadores viejos */
+  background: -webkit-linear-gradient(to bottom, rgba(249, 6, 87, 0.459), rgba(188, 78, 156, 0.664)), url(../imagenes/fondotres.jpg);
+  /* gradiente para navegadores actuales*/
+  background: linear-gradient(to bottom, rgba(249, 6, 87, 0.459), rgba(188, 78, 156, 0.664)), url(../imagenes/fondotres.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.cart{
+  background-color: white;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+.cartAmount{
+  position: relative;
+  top: -50px;
+  right: 0;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+}
+/** estilos de las cards de los cursos **/
+
+.tienda{
+  display: flex !important ;
+  flex-direction: row !important;
+}
+
+.detalle{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.card{
+  display: flex !important;
+}
+
+.cantidadyprecio{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards-cursos{
+  width: 60%;
+  display: flex!important;
+  justify-content: space-around !important;
+  padding: 0px !important;
+  flex-wrap:wrap;
+}
+
+
+.botones{
+  display: flex;
+  gap: 8px;
+  font-size: 20px;
+}
+.bi-dash-lg{
+  color: red;
+}
+.bi-plus-lg{
+  color: green;
+}
+
+
+
+
+.contenedor_header {
+  margin: auto;
+  margin-bottom: 17px;
+  padding: 17px; }
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  margin-left: 20px; }
+
+.bar-btn {
+  font-size: 25px;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer; }
+
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 100px;
+  background: rgba(0, 0, 0, 0.95);
+  transition: all .5s; }
+
+.nav-menu li {
+  display: none;
+  line-height: 15px;
+  margin: 40px 0;
+  transition: all .5s; }
+
+.nav-menu li a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none; }
+
+.nav-menu li a.active,
+.nav-menu li a:hover {
+  color: #4d0686;
+  transition: .3s; }
+
+#check {
+  display: none; }
+
+#check:checked ~ .nav-menu {
+  height: 60vh;
+  width: 75vh; }
+
+#check:checked ~ .nav-menu li {
+  display: block; }
+
+.titulos-header {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
+.titulos-header h1 {
+  font-size: 55px;
+  font-weight: 500px;
+  color: white; }
+
+.titulos-header h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: white; }
+
+/* BOTONES */
+.btn-header-registro,
+.btn-footer,
+.btn-registro,
+.btn-aplica-ya,
+.btn-formulario {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4c0686c4;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px; }
+
+.btn-header-registro:hover,
+.btn-footer:hover,
+.btn-registro:hover,
+.btn-aplica-ya:hover,
+.btn-formulario:hover {
+  opacity: 0.6; }
+
+/* SEPARADOR */
+#separador {
+  margin: 20px 0px;
+  text-align: center; }
+
+#separador h2 {
+  font-size: 55px;
+  font-weight: 600;
+  top: 50%;
+  left: 50%;
+  background: linear-gradient(to right, #0062ff, #ff0062);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center; }
+
+#separador p {
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-left: 25px;
+  color: black; }
+
+/* IMAGENES INF. */
+#imagenes {
+  display: flex;
+  justify-content: space-evenly; }
+
+#imagenes article {
+  width: 339px;
+  height: 450px;
+  color: black; }
+
+#imagenes img {
+  width: 339px;
+  height: 290px;
+  transition: 0, 5s;
+  object-fit: cover; }
+
+img:hover {
+  transform: scale(1.2); }
+
+#imagenes h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 24px 32px 16px 32px;
+  justify-content: center;
+  color: #4d0686; }
+
+#imagenes p {
+  font-weight: 400;
+  font-size: 17px;
+  margin: 16px 32px 0px 32px;
+  justify-content: center; }
+
+#imagenes {
+  margin-top: 150px;
+  margin-bottom: 150px; }
+
+/* TESTIMONIOS CLIENTES */
+.p-card {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  margin: 50px; }
+
+#testimonios h2 {
+  font-size: 55px;
+  font-weight: 600;
+  color: #4d0686;
+  text-align: center;
+  margin-bottom: 50px; }
+
+#cards-clientes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 80px; }
+
+.card {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.548); }
+
+.card p {
+  font-size: 15px;
+  text-align: center; }
+
+.card-contenido img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 50px;
+  height: 60px;
+  margin: 10px; }
+
+.card-contenido {
+  display: flex;
+  justify-items: space-evenly;
+  gap: 1em; }
+
+.titulo-card {
+  font-size: 20px;
+  margin-top: 10px; }
+
+/* CURSOS */
+#cursos {
+  display: flex;
+  justify-content: space-evenly; }
+
+#cursos h1 {
+  font-size: 55px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: #4d0686; }
+
+#cursos h2 {
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 40px;
+  color: black; }
+
+.btn-aplica {
+  text-align: center;
+  margin: 20px; }
+
+#cursos img {
+  width: 550px; }
+
+.cards-cursos,
+.cards-cursos-dos {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.card-text {
+  font-weight: bolder; }
+
+.titulo-cursos h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 40px;
+  padding: 50px; }
+
+.card:hover {
+  transform: scale(1.1); }
+
+/* SOBRE NOSOTROS */
+main h2 {
+  font-size: 55px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #4d0686; }
+
+#sobre-nosotros img {
+  height: 400px;
+  border-radius: 20px;
+  margin-left: 50px; }
+
+#sobre-nosotros p {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 60px;
+  text-align: center; }
+
+.sobre-nosotros1,
+.sobre-nosotros2,
+.sobre-nosotros3 {
+  display: flex;
+  justify-content: space-evenly; }
+
+.sobre-nosotros2 {
+  margin-right: 50px; }
+
+/* NUESTROS VALORES */
+.titulo-valores {
+  font-size: 55px;
+  font-weight: 600;
+  text-align: center;
+  margin: 60px;
+  color: #4d0686; }
+
+#nuestros-valores {
+  height: 16em;
+  margin: 60px;
+  display: flex;
+  justify-content: row;
+  justify-content: space-evenly; }
+
+#nuestros-valores .card img {
+  width: 50px;
+  margin: auto; }
+
+#nuestros-valores .card h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 10px; }
+
+#nuestros-valores .card p {
+  text-align: center;
+  font-weight: bolder; }
+
+/* PREGUNTAS FRECUENTES */
+.titulos-preguntas h2 {
+  font-size: 55px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #4d0686; }
+
+.accordion {
+  margin: 80px; }
+
+/*CONTACTO */
+#contacto {
+  display: flex;
+  justify-content: space-evenly; }
+
+.titulos-contacto h2 {
+  font-size: 55px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: #4d0686; }
+
+.titulos-contacto h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: black; }
+
+#contacto img {
+  width: 650px; }
+
+/* <FORMULARIO DE CONTACTO */
+#formulario-contacto h2 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 80px;
+  color: #4d0686; }
+
+#formulario-contacto h3 {
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 40px;
+  color: black; }
+
+.formulario {
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-top: 30px;
+  padding-bottom: 100px; }
+
+.btn-formulario {
+  margin-top: 30px; }
+
+/* FOOTER */
+.logoInstagram {
+  width: 30px; }
+
+.logoFacebook {
+  width: 30px; }
+
+.logoTwitter {
+  width: 30px; }
+
+div ul li a {
+  text-decoration: none; }
+
+.container ul li a {
+  transition: opacity 300ms; }
+
+.container ul li a:hover {
+  opacity: 0.6; }
+
+/* MENU RESPONSIVE */
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 50px; }
+  nav {
+    height: 100px; }
+  .bar-btn {
+    display: none; }
+  .nav-menu {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: none;
+    margin-right: 50px; }
+  .nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none; }
+  .nav-menu li a {
+    font-size: 18px; } }
+  #check:checked ~ .nav-menu {
+    height: 50vh;
+    width: 75vh; }
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+  main h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #4d0686;
+}
+  .menu nav ul li {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 3px;
+    margin-right: 3px; }
+  header {
+    background-position: center; }
+  .logo {
+    display: none; }
+  .titulos-header h1 {
+    font-size: 30px; }
+  .titulos-header h2 {
+    font-size: 20px; }
+  .menu nav ul li a {
+    font-size: 13px; }
+  .btn-registro {
+    padding: 8px 10px;
+    font-size: 12px; }
+  /* IMAGENES INF. */
+  #imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #imagenes {
+    width: 90%; }
+  #imagenes article {
+    margin: 50px; }
+  /* TESTIMONIOS CLIENTES */
+  #cards-clientes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #cards-clientes .card {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  /* CURSOS  */
+  .cards-cursos,
+  .cards-cursos-dos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px; }
+  .cards-cursos .card,
+  .cards-cursos-dos .card {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  #cursos {
+    display: flex;
+    flex-direction: column; }
+  #cursos img {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px; }
+  /* SOBRE NOSOTROS */
+  .sobre-nosotros1,
+  .sobre-nosotros3 {
+    display: flex;
+    flex-direction: column; }
+  .sobre-nosotros1 img,
+  .sobre-nosotros3 img {
+    margin: auto;
+    height: 400px;
+    width: 400px; }
+  .sobre-nosotros2 {
+    display: none; }
+  .sobre-nosotros2 img {
+    display: none; }
+  #sobre-nosotros img {
+    height: 90%;
+    width: 90%;
+    margin-left: 15px;
+    margin-right: 15px; }
+  /* NUESTROS VALORES */
+  .titulo-valores {
+    margin-bottom: 100px; }
+  #nuestros-valores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px; }
+  #nuestros-valores .card {
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  #nuestros-valores .card :first-child {
+    display: none; }
+  /* PREGUNTAS FRECUENTES */
+  .accordion {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin: auto; }
+  /* CONTACTO */
+  #contacto {
+    display: flex;
+    flex-direction: column; }
+  #contacto img {
+    width: 450px;
+    margin: auto; }
+  .formulario {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin: auto; }
+  img:hover {
+    transform: none; }
+  .card:hover {
+    transform: none; } }
